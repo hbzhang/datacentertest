@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<h1>List persons and their purchases</h1>
+
+<!--<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= event.CUSTOMER_FIRST_NAME %></td>
+        <td><%= event.CUSTOMER_LAST_NAME %></td>
+          <td><%= event.CUSTOMER_LAST_NAME %></td>
+        </tr>
+    <% end %>
+
+  </tbody>
+</table> -->
+
+<table>
+    <thead>
+      <tr>
+        <th>Filtered</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+     <% @events.each do |p| %>
+    <tr>
+      <td> <%= p.CUSTOMER_FIRST_NAME %> </td>
+      <td> <%= p.CUSTOMER_LAST_NAME %> </td>
+    </tr>
+    <% end %>
+     <tr>
+     <%=  @events.count %>
+    </tr>
+
+   </tbody>
+</table>
+
+<br>

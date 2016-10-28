@@ -1,0 +1,2 @@
+module TFacilityAccessEventHistoriesHelper
+end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @t_facility_access_event_history.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @t_facility_access_event_history.last_name %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @t_facility_access_event_history.person_id %>
+</p>
+
+<%= link_to 'Edit', edit_t_facility_access_event_history_path(@t_facility_access_event_history) %> |
+<%= link_to 'Back', t_facility_access_event_histories_path %>
